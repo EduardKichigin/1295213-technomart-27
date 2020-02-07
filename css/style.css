@@ -1,0 +1,170 @@
+body {
+  font-family: 'Cuprum', sans-serif;
+  font-family: 'PT Sans', sans-serif;
+  color: #ffffff;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+header {
+  background-color: #f3f7f8;
+ }
+
+.header {
+  background-color: #293449;
+  font-size: 17px;
+  line-height: 18px;
+ }
+
+.order {
+  background-color: #63a63e;
+}
+.nav {
+  background-color: #32425c;
+  font-size: 17px;
+  line-height: 17px;
+  text-transform: capitalize;
+ }
+
+h1 {
+  color: #ee3643;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.user-navigation {
+  list-style: none;
+  color: #000000;
+  font-size: 21px;
+  line-height: 21px;
+  background-color: #ffffff;
+}
+
+.adress {
+  color: #32425c;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.tel {
+  color: #ee3643;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+
+
+
+.company {
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000; 
+}
+
+.aboutcompany {
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000; 
+}
+
+.partners {
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000; 
+}
+
+.a-aboutcompany {
+  font-size: 14px;
+  line-height: 18px;
+  background-color: #ee3643;
+}
+
+.nav-footer {
+  background-color: #32425c;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.footer-down {
+  background-color: #293449;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.goldtext {
+  color: #ffd180;
+}
+
+.ul-footer-nav,
+.cocial {
+  list-style: none;
+}
+
+.a-line {
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;
+  text-decoration: underline;
+}
+
+.user-name {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000; 
+}
+
+.catalog-nav {
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000; 
+  text-transform: uppercase;
+}
+
+.hammerdrill {
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c; 
+  text-transform: uppercase;
+}
+
+.checkbox-name {
+  font-size: 17px;
+  line-height: 30px;
+  color: #000000; 
+  text-transform: uppercase;
+}
+
+.checkbox-product {
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000; 
+  text-transform: uppercase;
+}
+
+.drill-name {
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000; 
+}
+
+.oldprice {
+  font-size: 17px;
+  line-height: 18px;
+  color: #999999; 
+  text-decoration: line-through;
+}
+
+.price {
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff; 
+  background-color: #ee3643;
+}
