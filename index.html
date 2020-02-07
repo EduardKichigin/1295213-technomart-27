@@ -3,10 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header>
-      <div>
+      <div class="header">
         <a>
         <img src="img/logo.png" width="220" height="47" alt="Логотип «Техномарт»">
         </a>
@@ -16,22 +19,22 @@
         </form>
         <a href="#">закладки</a>
         <a href="#">корзина</a>
-        <a href="#">Оформить заказ</a>
+        <a href="#" class="order">Оформить заказ</a>
       </div>
       <h1>Интернет-магазин
         строительных материалов
         и инструментов для ремонта
       </h1>
       <div>
-        <a href="tel:+7(812)5550555">+7(812)555-05-55</a>
-        <span>г.Санкт-Петербург, ул. Конюшенная, д.19/8</span>
+        <a href="tel:+7(812)5550555" class="tel">+7(812)555-05-55</a>
+        <span class="adress">г.Санкт-Петербург, ул. Конюшенная, д.19/8</span>
       </div>
       <div>
-        <a href="#">Войти</a>
-        <a href="#">Регистрация</a>
+        <a class="user-navigation" href="#">Войти</a>
+        <a class="user-navigation" href="#">Регистрация</a>
       </div>
-      <nav>
-        <ul>
+      <nav class="nav">
+        <ul class="site-navigation">
           <li> <a href="#">Главная</a></li>
           <li> <a href="#">Компания</a></li>
           <li> <a href="#">Каталог</a></li>
@@ -180,66 +183,66 @@
         </div>
       </section>
       <section>
-        <h2> Компания «Техномарт» </h2>
-        <p> Настоящий мужской шоппинг начинается здесь! Огромный выбор  для ремонта и
+        <h2 class="company">Компания «Техномарт»</h2>
+        <p class="aboutcompany"> Настоящий мужской шоппинг начинается здесь! Огромный выбор  для ремонта и
           строительства не оставит равнодушным любителей сэкономить на гастарбайтерах. 
         </p>
-        <p> Мы можем доставить ваш товар в самые отдаленные точки России!
+        <p class="aboutcompany"> Мы можем доставить ваш товар в самые отдаленные точки России!
           Техномарт работает со многими транспортными компаниями: 
         </p>
-        <ul>
+        <ul class="partners">
           <li>Деловые линии</li>
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
-        <a href="#">Подробнее о компании</a>
+        <a href="#" class="a-aboutcompany">Подробнее о компании</a>
       </section>
       <section>
-        <h2>Контакты</h2>
-        <p> Вы можете забрать товар сами,
+        <h2 class="company">Контакты</h2>
+        <p class="aboutcompany"> Вы можете забрать товар сами,
           заехав в наш офис: 
         </p>
         <a href="#"><img src="img/map.png" width="300" height="158" alt="карта"></a>
-        <button type="button">Заблудились? Напишите нам!</button>
+        <button type="button" class="a-aboutcompany">Заблудились? Напишите нам!</button>
       </section>
     </main>
     <footer>
-      <div>
+      <div class="nav-footer">
         <a>
         <img src="img/logo.png" width="220" height="47" alt="Логотип «Техномарт»">
         </a>
         <span>г.Санкт-Петербург, ул. Конюшенная, д.19/8</span>
         <a href="tel:+7(812)5550555"> +7(812)555-05-55 </a>
-        <ul>
+        <ul class="ul-footer-nav">
           <li>Компания</li>
           <li>Новости</li>
           <li>Каталог</li>
           <li>Доставка</li>
           <li>Контакты</li>
         </ul>
-        <ul>
+        <ul class="goldtext ul-footer-nav">
           <li>Материалы</li>
           <li>Техника</li>
           <li>Инструмент</li>
           <li>Спецпредложения</li>
         </ul>
       </div>
-      <div>
+      <div class="footer-down">
         <p> 2010-2017 Компания «Техномарт»
           Все права защищены
         </p>
-        <ul>
+        <ul class="cocial">
           <li><a href="#">Вконтакте</a></li>
           <li><a href="#">Фейсбук</a></li>
           <li><a href="#">Инстаграм</a></li>
         </ul>
         <div>
           <span> Обратная связь </span>
-          <a href="malito:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          <a href="malito:mail@htmlacademy.ru" class="goldtext">mail@htmlacademy.ru</a>
         </div>
         <div>
           <span>Разработано - </span>
-          <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss" class="goldtext">htmlacademy.ru</a>
         </div>
       </div>
     </footer>
