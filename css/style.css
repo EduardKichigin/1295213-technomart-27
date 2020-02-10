@@ -1,6 +1,6 @@
 body {
   font-family: 'Cuprum', sans-serif;
-  font-family: 'PT Sans', sans-serif;
+  font-weight: 300; 
   color: #ffffff;
   background-color: #ffffff;
 }
@@ -10,37 +10,47 @@ a {
   color: #ffffff;
 }
 
-header {
+ul {
+  list-style: none;
+}
+
+
+.header {
   background-color: #f3f7f8;
  }
 
-.header {
+.header_topline {
   background-color: #293449;
   font-size: 17px;
   line-height: 18px;
  }
 
-.order {
+.header_topline_order {
   background-color: #63a63e;
 }
-.nav {
-  background-color: #32425c;
-  font-size: 17px;
-  line-height: 17px;
-  text-transform: capitalize;
- }
 
-h1 {
+.header_h1 {
   color: #ee3643;
   font-size: 16px;
   line-height: 23px;
+  font-weight: 200; 
+  font-style: italic;
+
 }
 
-.site-navigation {
-  list-style: none;
+.header_contacts_adress {
+  color: #32425c;
+  font-size: 14px;
+  line-height: 24px;
 }
 
-.user-navigation {
+.header_contacts_tel {
+  color: #ee3643;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.header_user-nav_link {
   list-style: none;
   color: #000000;
   font-size: 21px;
@@ -48,52 +58,62 @@ h1 {
   background-color: #ffffff;
 }
 
-.adress {
-  color: #32425c;
-  font-size: 14px;
-  line-height: 24px;
+.header_nav {
+  background-color: #32425c;
+  font-size: 17px;
+  line-height: 17px;
+  text-transform: capitalize;
+ }
+
+
+.header_site-nav {
+  list-style: none;
 }
 
-.tel {
-  color: #ee3643;
-  font-size: 21px;
-  line-height: 21px;
-}
 
-
-
-
-.company {
+.about-company_h2,
+.about-drill_h2 {
   font-size: 30px;
   line-height: 30px;
   color: #000000; 
 }
+.about-drill_h2 {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+}
 
-.aboutcompany {
+
+.about-company_text,
+.about-drill_text {
   font-size: 13px;
   line-height: 24px;
   color: #000000; 
 }
 
-.partners {
+.about-drill_text {
+  font-family: 'PT Sans', sans-serif;
+}
+
+
+.about-company_partners {
   font-size: 18px;
   line-height: 20px;
   color: #000000; 
 }
 
-.a-aboutcompany {
+.about-company_link {
   font-size: 14px;
   line-height: 18px;
   background-color: #ee3643;
 }
 
-.nav-footer {
+.footer_nav {
   background-color: #32425c;
   font-size: 18px;
   line-height: 24px;
 }
 
-.footer-down {
+.footer_down {
   background-color: #293449;
   font-size: 16px;
   line-height: 18px;
@@ -103,12 +123,93 @@ h1 {
   color: #ffd180;
 }
 
-.ul-footer-nav,
-.cocial {
-  list-style: none;
+/*blocks*/
+
+.blocks_items_h3_1 {
+  font-size: 24px;
+  line-height: 30px;
+  background-color: #ffbf47;
+  font-weight: 700;
 }
 
-.a-line {
+.blocks_items_h3_2 {
+  font-size: 24px;
+  line-height: 30px;
+  background-color: #3bbce3;
+  font-weight: 700;
+}
+
+.blocks_items_h3_3 {
+  font-size: 24px;
+  line-height: 30px;
+  background-color: #dc91d8;
+  font-weight: 700;
+}
+
+.blocks_items_h3_4 {
+  font-size: 24px;
+  line-height: 30px;
+  background-color: #8ed78f;
+  font-weight: 700;
+}
+
+.blocks_items_h3_5 {
+  font-size: 24px;
+  line-height: 30px;
+  background-color: #ffc047;
+  font-weight: 700;
+}
+.blocks-link {
+  font-size: 14px;
+  line-height: 18px;
+  background-color: #e5e5e5;
+  text-transform: uppercase;
+}
+
+/*слайдер*/
+.slider_h3 {
+font-size: 36px;
+line-height: 36px;
+color: #ffffff;
+font-weight: 700;
+}
+
+.slider_text {
+font-size: 18px;
+line-height: 24px;
+color: #ffffff;
+}
+
+.calalog-link {
+font-size: 14px;
+line-height: 18px;
+background-color: #ee3643;
+text-transform: uppercase;
+}
+
+/* */
+
+.popular {
+  background-color: #f9f5f0;
+}
+
+.popular_h2 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  text-transform: uppercase;
+}
+
+.popular_link {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: #ee3643;
+}
+  
+
+
+.user-link {
   font-size: 16px;
   line-height: 18px;
   color: #32425c;
@@ -121,50 +222,209 @@ h1 {
   color: #000000; 
 }
 
-.catalog-nav {
+.catalog_nav,
+.catalog_nav_link {
   font-size: 13px;
   line-height: 18px;
   color: #000000; 
   text-transform: uppercase;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
 }
 
-.hammerdrill {
+.main_hammerdrill {
   font-size: 30px;
   line-height: 30px;
   color: #32425c; 
   text-transform: uppercase;
 }
 
-.checkbox-name {
+.filter {
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000; 
+  text-transform: uppercase;
+  background-color: #f7f3ec; 
+  font-family: 'PT Sans', sans-serif;
+}
+
+.main_checkbox-name {
   font-size: 17px;
   line-height: 30px;
   color: #000000; 
   text-transform: uppercase;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
 }
 
-.checkbox-product {
+.main_checkbox-product {
   font-size: 15px;
   line-height: 20px;
   color: #000000; 
   text-transform: uppercase;
+  font-family: 'PT Sans', sans-serif;
 }
 
-.drill-name {
+.drill-items_drill-name {
   font-size: 18px;
   line-height: 20px;
   color: #000000; 
+  font-weight: 700;
+  font-family: 'PT Sans', sans-serif;
 }
 
-.oldprice {
+.drill-items_oldprice {
   font-size: 17px;
   line-height: 18px;
   color: #999999; 
   text-decoration: line-through;
+  font-weight: 700;
+  font-family: 'PT Sans', sans-serif;
 }
 
-.price {
+.drill-items_price {
   font-size: 17px;
   line-height: 18px;
   color: #ffffff; 
   background-color: #ee3643;
+  font-weight: 700;
+  font-family: 'PT Sans', sans-serif;
 }
+
+.service_items_h3 {
+  font-size: 21px;
+  line-height: 30px;
+  color: #ffffff; 
+  background-color: #32425c;
+  font-weight: 700;
+}
+
+.service_items_text {
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000; 
+  font-family: 'PT Sans', sans-serif;
+}
+
+.service_items_link {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff; 
+  background-color: #ff5357;
+}
+
+.service_items_title {
+  font-size: 36px;
+  line-height: 24px;
+  color: #32425c; 
+  font-weight: 500;
+}
+
+.service_h2 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000; 
+  font-weight: 500;
+}
+
+.service {
+background-color: #f5f8fa;
+}
+
+.service_text {
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000; 
+  font-family: 'PT Sans', sans-serif;
+}
+
+.number-page_link {
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.button-filter{
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  font-family: 'PT Sans', sans-serif;
+}
+
+/* focus hover */
+
+/*лого поиск*/
+
+.header_topline_link:focus,
+.header_topline_link:hover {
+    background-color: #212a3a;
+}
+
+.header_topline_link:active {
+  background-color: #161d29;
+  color: #999ca1;
+}
+
+.header_topline_order:focus,
+.header_topline_order:hover {
+  background-color: #5fbb2d;
+}
+
+.header_topline_order:active {
+   background-color: #518534;
+   color: #a2be93;
+}
+
+.header_user-nav_link:focus,
+.header_user-nav_link:hover {
+  color: #ee3643; 
+}
+
+.header_user-nav_link:active {
+  color: #b2b2b2;
+}
+
+.header_nav_items_link:focus,
+.header_nav_items_link:hover {
+  background-color: #293449;
+}
+
+.header_nav_items_link:active {
+  background-color: #1d2739;
+  color: #8e939c;
+}
+/* надо ли делать отдельный фон для ссылок */
+
+
+.blocks-link:focus,
+.block-link:hover {
+  background-color: #cccccc;
+}
+
+.block-link:active {
+  background-color: #b2b2b2; 
+}
+
+.catalog-link:focus,
+.catalog-link:hover {
+  background-color: #ca2c37;
+}
+
+.catalog-link:active {
+  background-color: #ba2732;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
