@@ -15,7 +15,7 @@
         </a>
         <form action="#" metod="post">
           <label for="search">Поиск:</label>
-          <input type="search" name="search" id="search">
+          <input type="search" name="search" id="search" class="search">
         </form>
         <a href="#" class="header_topline_link">закладки</a>
         <a href="#" class="header_topline_link">корзина</a>
@@ -35,73 +35,73 @@
       </div>
       <nav class="header_nav">
         <ul class="header_nav_items">
-          <li> <a href="#" class="header_nav_items_link">Главная</a></li>
-          <li> <a href="#" class="header_nav_items_link">Компания</a></li>
-          <li> <a href="#" class="header_nav_items_link">Каталог</a></li>
-          <li> <a href="#" class="header_nav_items_link">Новости</a></li>
-          <li> <a href="#" class="header_nav_items_link">Спецпредложения</a></li>
-          <li> <a href="#" class="header_nav_items_link">Доставка</a></li>
-          <li> <a href="#" class="header_nav_items_link">Контакты</a></li>
+          <li> <a href="#" class="header_nav_link">Главная</a></li>
+          <li> <a href="#" class="header_nav_link">Компания</a></li>
+          <li> <a href="#" class="header_nav_link">Каталог</a></li>
+          <li> <a href="#" class="header_nav_link">Новости</a></li>
+          <li> <a href="#" class="header_nav_link">Спецпредложения</a></li>
+          <li> <a href="#" class="header_nav_link">Доставка</a></li>
+          <li> <a href="#" class="header_nav_link">Контакты</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="blocks">
+      <section class="block">
         <h2 class="visually-hidden block_h2">Товары</h2>
         <ul class="blocks_items">
           <li>
-            <h3 class="blocks_items_h3_1">Материалы</h3>
-            <a href="#" class="blocks-link">на любой вкус</a>
+            <h3 class="blocks_items_goods yellow">Материалы</h3>
+            <a href="#" class="block-link">на любой вкус</a>
           </li>
           <li>
-            <h3 class="blocks_items_h3_2">Инструмент</h3>
-            <a href="#" class="blocks-link">на любой вкус</a>
+            <h3 class="blocks_items_goods blue">Инструмент</h3>
+            <a href="#" class="block-link">на любой вкус</a>
           </li>
           <li>
-            <h3 class="blocks_items_h3_3">Техника</h3>
-            <a href="#" class="blocks-link">для стройки</a>
+            <h3 class="blocks_items_goods purple">Техника</h3>
+            <a href="#" class="block-link">для стройки</a>
           </li>
           <li>
-            <h3 class="blocks_items_h3_4">Скидка 50%</h3>
-            <a href="#" class="blocks-link">на 350 товаров</a>
+            <h3 class="blocks_items_goods green">Скидка 50%</h3>
+            <a href="#" class="block-link">на 350 товаров</a>
           </li>
           <li>
-            <h3 class="blocks_items_h3_5">Доставка</h3>
-            <a href="#" class="blocks-link">бесплатно</a>
+            <h3 class="blocks_items_goods yellow">Доставка</h3>
+            <a href="#" class="block-link">бесплатно</a>
           </li>
         </ul>
-          <div class="slider">
-            <h3 class="slider_h3">дрели</h3>
-            <p class="slider_text">Соседям на радость!</p>
-            <span> кнопочки
-            </span>
-            <ul>
-              <li>
-                <img src="img/foto1.jpg" width="620" height="266" alt="">
-              </li>
-              <li>
-                <img src="img/foto2.jpg" width="620" height="266" alt="">
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <a href="technomart-catalog.psd" class="calalog-link">открыть каталог</a>
-              </li>
-              <li>
-                <a href="#"><img src="#" width="#" height="#" alt="стрелка вправо"></a>
-              </li>
-              <li>
-                <a href="#"><img src="#" width="#" height="#" alt="стрелка влево"></a>
-              </li>
-            </ul>
-          </div>
+        <div class="slider">
+          <h3 class="slider_h3">дрели</h3>
+          <p class="slider_text">Соседям на радость!</p>
+          <span> кнопочки
+          </span>
+          <ul class="slider_foto">
+            <li>
+              <img src="img/foto1.jpg" width="620" height="266" alt="">
+            </li>
+            <li>
+              <img src="img/foto2.jpg" width="620" height="266" alt="">
+            </li>
+          </ul>
+          <ul class="slider_buttom">
+            <li>
+              <a href="technomart-catalog.psd" class="catalog-link">открыть каталог</a>
+            </li>
+            <li>
+              <a href="#"><img src="#" width="#" height="#" alt="стрелка вправо"></a>
+            </li>
+            <li>
+              <a href="#"><img src="#" width="#" height="#" alt="стрелка влево"></a>
+            </li>
+          </ul>
+        </div>
       </section>
       <section>
         <div class="popular">
           <h2 class="popular_h2">Популярные товары:</h2>
           <a href="#" class="popular_link">Все популярные товары</a>
         </div>
-        <ul>
+        <ul class="product_items">
           <li>
             <img src="img/perforator1.jpg" width="218" height="170" alt="">
             <h3 class="drill-items_drill-name">Перфоратор BOSCH BFG 9000</h3>
@@ -132,7 +132,7 @@
           <h2 class="popular_h2">Популярные производители:</h2>
           <a href="#" class="popular_link">все производители</a>
         </div>
-        <ul>
+        <ul class="brends">
           <li>
             <a href="#"><img src="img/bosch.png" width="126" height="37" alt="BOSCH">
             </a>
@@ -172,8 +172,8 @@
         <p class="service_text">Хороший интернет-магазин отличается от плохого не только ценами! </p>
         <p class="service_text">Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         <div>
-         /* СЛАЙДЕР */
-         <ul class="service_items">
+          /* СЛАЙДЕР */
+          <ul class="service_items">
             <li>
               <h3 class="service_items_h3">Доставка</h3>
               <span class="service_items_title">Доставка</span>
@@ -185,8 +185,8 @@
               <h3 class="service_items_h3">Гарантия</h3>
               <span class="service_items_title">Гарантия</span>
               <p class="service_items_text">Если купленный у нас товар поломается или заискрит, 
-                 а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. 
-                 Дом уж восстановите как-нибудь сами.
+                а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. 
+                Дом уж восстановите как-нибудь сами.
               </p>
             </li>
             <li>
@@ -197,8 +197,8 @@
                 Кредитные консультанты придут вам на помощь.
               </p>
               <a href="#" class="service_items_link">отправить заявку</a>
-            </li>  
-         </ul>
+            </li>
+          </ul>
         </div>
       </section>
       <section class="about-company">
@@ -232,18 +232,18 @@
         </a>
         <span class="footer_nav_location">г.Санкт-Петербург, ул. Конюшенная, д.19/8</span>
         <a href="tel:+7(812)5550555"> +7(812)555-05-55 </a>
-        <ul class="footer_nav_items">
-          <li>Компания</li>
-          <li>Новости</li>
-          <li>Каталог</li>
-          <li>Доставка</li>
-          <li>Контакты</li>
+        <ul class="footer_nav_item">
+          <li class="footer_nav_items">Компания</li>
+          <li class="footer_nav_items">Новости</li>
+          <li class="footer_nav_items">Каталог</li>
+          <li class="footer_nav_items">Доставка</li>
+          <li class="footer_nav_items">Контакты</li>
         </ul>
-        <ul class="goldtext footer_nav_items2">
-          <li>Материалы</li>
-          <li>Техника</li>
-          <li>Инструмент</li>
-          <li>Спецпредложения</li>
+        <ul class="goldtext">
+          <li class="footer_nav_items2">Материалы</li>
+          <li class="footer_nav_items2">Техника</li>
+          <li class="footer_nav_items2">Инструмент</li>
+          <li class="footer_nav_items2">Спецпредложения</li>
         </ul>
       </div>
       <div class="footer_down">
@@ -253,17 +253,17 @@
         <ul class="footer_down_cocial">
           <li><a href="#" class="footer_down_cocial_link">Вконтакте</a></li>
           <li><a href="#" class="footer_down_cocial_link">Фейсбук</a></li>
-          <li><a href="#"class="footer_down_cocial_link">Инстаграм</a></li>
+          <li><a href="#" class="footer_down_cocial_link">Инстаграм</a></li>
         </ul>
-         <div>
+        <div>
           <span> Обратная связь </span>
-          <a href="malito:mail@htmlacademy.ru" class="goldtext">mail@htmlacademy.ru</a>
+          <a href="malito:mail@htmlacademy.ru" class="goldtext academy">mail@htmlacademy.ru</a>
         </div>
         <div>
           <span>Разработано - </span>
-          <a href="https://htmlacademy.ru/intensive/htmlcss" class="goldtext">htmlacademy.ru</a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss" class="goldtext academy">htmlacademy.ru</a>
         </div>
-      </div> 
+      </div>
     </footer>
     <form action="" method="post">
       <div>
@@ -271,17 +271,17 @@
       </div>
       <div>
         <label for="name">Ваше имя:</label>
-    	  <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+        <input type="text" name="name" id="name" placeholder="Имя Фамилия">
       </div>
       <div>
-    	  <label for="email">Ваш e-mail:</label>
-    	  <input type="email" name="email" id="email" placeholder="email@example.com"> 
+        <label for="email">Ваш e-mail:</label>
+        <input type="email" name="email" id="email" placeholder="email@example.com"> 
       </div>
       <p>
         <label for="letter">Текс письма:</label>
         <textarea name="letter" id="letter" rows="5">В свободной форме</textarea>
       </p>
-        <button type="submit">отправить</button>
+      <button type="submit">отправить</button>
     </form>
   </body>
 </html>
