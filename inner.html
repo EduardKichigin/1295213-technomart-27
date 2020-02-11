@@ -15,7 +15,7 @@
         </a>
         <form action="#" metod="post">
           <label for="search">Поиск:</label>
-          <input type="search" name="search" id="search">
+          <input type="search" name="search" id="search" class="search">
         </form>
         <a href="#" class="header_topline_link">закладки</a>
         <a href="#" class="header_topline_link">корзина</a>
@@ -37,13 +37,13 @@
       </div>
       <nav class="header_nav">
         <ul class="header_nav_items">
-          <li> <a href="#" class="header_nav_items_link">Главная</a></li>
-          <li> <a href="#" class="header_nav_items_link">Компания</a></li>
-          <li> <a href="#" class="header_nav_items_link">Каталог</a></li>
-          <li> <a href="#" class="header_nav_items_link">Новости</a></li>
-          <li> <a href="#" class="header_nav_items_link">Спецпредложения</a></li>
-          <li> <a href="#" class="header_nav_items_link">Доставка</a></li>
-          <li> <a href="#" class="header_nav_items_link">Контакты</a></li>
+          <li> <a href="#" class="header_nav_link">Главная</a></li>
+          <li> <a href="#" class="header_nav_link">Компания</a></li>
+          <li> <a href="#" class="header_nav_link">Каталог</a></li>
+          <li> <a href="#" class="header_nav_link">Новости</a></li>
+          <li> <a href="#" class="header_nav_link">Спецпредложения</a></li>
+          <li> <a href="#" class="header_nav_link">Доставка</a></li>
+          <li> <a href="#" class="header_nav_link">Контакты</a></li>
         </ul>
       </nav>
     </header>
@@ -71,7 +71,7 @@
           <fieldset>
             <legend class="main_checkbox-name">цена:</legend>
             <input type="range" name="price" id="price" min="0" max="30000" step="100">
-          </fieldset> 
+          </fieldset>
           <fieldset>
             <legend class="main_checkbox-name"> производители:</legend>
             <ul class="main_checkbox-product">
@@ -83,11 +83,11 @@
                 <input type="checkbox" name="interskol" id="interskol">
                 <label for="interskol">интерскол</label>
               </li>
-               <li>
+              <li>
                 <input type="checkbox" name="makita" id="makita" checked>
                 <label for="makita">makita</label>
               </li>
-               <li>
+              <li>
                 <input type="checkbox" name="dewalt" id="dewalt">
                 <label for="dewalt">dewalt</label>
               </li>
@@ -107,7 +107,7 @@
               <li>
                 <input type="radio" name="typeofpower" value="network" id="network">
                 <label for="network">сетевые</label>
-              </li> 
+              </li>
             </ul>
           </fieldset>
           <button type="submit" class="button-filter">показать</button>
@@ -116,19 +116,19 @@
       <div>
         <h3 class="filter">сортировка:</h3>
         <ul>
-          <li><a href="#" class="filter">по цене</a></li>
-          <li><a href="#" class="filter">по типу</a></li>
-          <li><a href="#" class="filter">по функционалу</a></li>
+          <li><a href="#" class="filter dash">по цене</a></li>
+          <li><a href="#" class="filter dash">по типу</a></li>
+          <li><a href="#" class="filter dash">по функционалу</a></li>
         </ul>
         <ul>
           <li><a href="#"><img src="#" width="#" height="#" alt=стрелка вверх></a></li>
           <li><a href="#"><img src="#" width="#" height="#" alt="стрелка вниз"></a></li>
         </ul>
-      </div>  
+      </div>
       <section>
         <ul class="drill-items">
           <li>
-             <img src="img/perforator2.jpg" width="218" height="170" alt="">
+            <img src="img/perforator2.jpg" width="218" height="170" alt="">
             <h3 class="drill-items_drill-name">Перфоратор BOSCH BFG 3000</h3>
             <p class="drill-items_oldprice">22500 Р.</p>
             <a href="#" class="drill-items_price">15500 Р.</a>
@@ -145,7 +145,7 @@
             <a href="#" class="drill-items_price">12500 Р.</a>
           </li>
           <li>
-             <img src="img/perforator2.jpg" width="218" height="170" alt="">
+            <img src="img/perforator2.jpg" width="218" height="170" alt="">
             <h3 class="drill-items_drill-name">Перфоратор BOSCH BFG 3000</h3>
             <p class="drill-items_oldprice">22500 Р.</p>
             <a href="#" class="drill-items_price">15500 Р.</a>
@@ -162,7 +162,7 @@
             <a href="#" class="drill-items_price">12500 Р.</a>
           </li>
           <li>
-             <img src="img/perforator2.jpg" width="218" height="170" alt="">
+            <img src="img/perforator2.jpg" width="218" height="170" alt="">
             <h3 class="drill-items_drill-name">Перфоратор BOSCH BFG 3000</h3>
             <p class="drill-items_oldprice">22500 Р.</p>
             <a href="#" class="drill-items_price">15500 Р.</a>
@@ -201,18 +201,18 @@
         </a>
         <span class="footer_nav_location">г.Санкт-Петербург, ул. Конюшенная, д.19/8</span>
         <a href="tel:+7(812)5550555"> +7(812)555-05-55 </a>
-        <ul class="footer_nav_items">
-          <li>Компания</li>
-          <li>Новости</li>
-          <li>Каталог</li>
-          <li>Доставка</li>
-          <li>Контакты</li>
+        <ul class="footer_nav_item">
+          <li class="footer_nav_items">Компания</li>
+          <li class="footer_nav_items">Новости</li>
+          <li class="footer_nav_items">Каталог</li>
+          <li class="footer_nav_items">Доставка</li>
+          <li class="footer_nav_items">Контакты</li>
         </ul>
-        <ul class="goldtext footer_nav_items2">
-          <li>Материалы</li>
-          <li>Техника</li>
-          <li>Инструмент</li>
-          <li>Спецпредложения</li>
+        <ul class="goldtext">
+          <li class="footer_nav_items2">Материалы</li>
+          <li class="footer_nav_items2">Техника</li>
+          <li class="footer_nav_items2">Инструмент</li>
+          <li class="footer_nav_items2">Спецпредложения</li>
         </ul>
       </div>
       <div class="footer_down">
@@ -222,15 +222,15 @@
         <ul class="footer_down_cocial">
           <li><a href="#" class="footer_down_cocial_link">Вконтакте</a></li>
           <li><a href="#" class="footer_down_cocial_link">Фейсбук</a></li>
-          <li><a href="#"class="footer_down_cocial_link">Инстаграм</a></li>
+          <li><a href="#" class="footer_down_cocial_link">Инстаграм</a></li>
         </ul>
         <div>
           <span> Обратная связь </span>
-          <a href="malito:mail@htmlacademy.ru" class="goldtext">mail@htmlacademy.ru</a>
+          <a href="malito:mail@htmlacademy.ru" class="goldtext academy">mail@htmlacademy.ru</a>
         </div>
         <div>
           <span>Разработано - </span>
-          <a href="https://htmlacademy.ru/intensive/htmlcss" class="goldtext">htmlacademy.ru</a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss" class="goldtext academy">htmlacademy.ru</a>
         </div>
       </div>
     </footer>
