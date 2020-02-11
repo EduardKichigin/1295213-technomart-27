@@ -10,23 +10,40 @@ a {
   color: #ffffff;
 }
 
-ul {
-  list-style: none;
-}
-
-
 .header {
   background-color: #f3f7f8;
- }
+}
 
 .header_topline {
   background-color: #293449;
   font-size: 17px;
   line-height: 18px;
- }
+}
+
+/* для поиска */
 
 .header_topline_order {
   background-color: #63a63e;
+}
+
+.header_topline_link:focus,
+.header_topline_link:hover {
+  background-color: #212a3a;
+}
+
+.header_topline_link:active {
+  background-color: #161d29;
+  color: #999ca1;
+}
+
+.header_topline_order:focus,
+.header_topline_order:hover {
+  background-color: #5fbb2d;
+}
+
+.header_topline_order:active {
+  background-color: #518534;
+  color: #a2be93;
 }
 
 .header_h1 {
@@ -35,7 +52,6 @@ ul {
   line-height: 23px;
   font-weight: 200; 
   font-style: italic;
-
 }
 
 .header_contacts_adress {
@@ -58,18 +74,35 @@ ul {
   background-color: #ffffff;
 }
 
+.header_user-nav_link:focus,
+.header_user-nav_link:hover {
+  color: #ee3643; 
+}
+
+.header_user-nav_link:active {
+  color: #b2b2b2;
+}
+
 .header_nav {
   background-color: #32425c;
   font-size: 17px;
   line-height: 17px;
   text-transform: capitalize;
- }
+}
 
-
-.header_site-nav {
+.header_nav_items {
   list-style: none;
 }
 
+.header_nav_link:focus,
+.header_nav_link:hover {
+  background-color: #293449;
+}
+
+.header_nav_link:active {
+  background-color: #1d2739;
+  color: #8e939c; 
+}
 
 .about-company_h2,
 .about-drill_h2 {
@@ -77,11 +110,11 @@ ul {
   line-height: 30px;
   color: #000000; 
 }
+
 .about-drill_h2 {
   font-family: 'PT Sans', sans-serif;
   font-weight: 700;
 }
-
 
 .about-company_text,
 .about-drill_text {
@@ -93,7 +126,6 @@ ul {
 .about-drill_text {
   font-family: 'PT Sans', sans-serif;
 }
-
 
 .about-company_partners {
   font-size: 18px;
@@ -107,10 +139,23 @@ ul {
   background-color: #ee3643;
 }
 
+.about-company_link:focus,
+.about-company_link:hover {
+  background-color: #ca2c37;
+}
+
+.about-company_link:active {
+  background-color: #ba2732
+}
+
 .footer_nav {
   background-color: #32425c;
   font-size: 18px;
   line-height: 24px;
+}
+
+.footer_down_cocial {
+  list-style: none;
 }
 
 .footer_down {
@@ -121,73 +166,101 @@ ul {
 
 .goldtext {
   color: #ffd180;
+  list-style-type: none;
 }
 
-/*blocks*/
-
-.blocks_items_h3_1 {
+.blocks_items_goods {
   font-size: 24px;
   line-height: 30px;
+  font-weight: 700;
+}
+.yellow {
   background-color: #ffbf47;
-  font-weight: 700;
 }
 
-.blocks_items_h3_2 {
-  font-size: 24px;
-  line-height: 30px;
+.blue {
   background-color: #3bbce3;
-  font-weight: 700;
 }
 
-.blocks_items_h3_3 {
-  font-size: 24px;
-  line-height: 30px;
-  background-color: #dc91d8;
-  font-weight: 700;
+.purple {
+  background-color: #dc91d8; 
 }
 
-.blocks_items_h3_4 {
-  font-size: 24px;
-  line-height: 30px;
+.green {
   background-color: #8ed78f;
-  font-weight: 700;
 }
 
-.blocks_items_h3_5 {
-  font-size: 24px;
-  line-height: 30px;
-  background-color: #ffc047;
-  font-weight: 700;
-}
-.blocks-link {
+.block-link {
   font-size: 14px;
   line-height: 18px;
   background-color: #e5e5e5;
   text-transform: uppercase;
 }
 
+.block-link:focus,
+.block-link:hover {
+  background-color: #cccccc;
+}
+
+.block-link:active {
+  background-color: #b2b2b2; 
+}
+
 /*слайдер*/
+
 .slider_h3 {
-font-size: 36px;
-line-height: 36px;
-color: #ffffff;
-font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+  color: #ffffff;
+  font-weight: 700;
 }
 
 .slider_text {
-font-size: 18px;
-line-height: 24px;
-color: #ffffff;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
 }
 
-.calalog-link {
-font-size: 14px;
-line-height: 18px;
-background-color: #ee3643;
-text-transform: uppercase;
+.catalog-link {
+  font-size: 14px;
+  line-height: 18px;
+  background-color: #ee3643;
+  text-transform: uppercase;
 }
 
-/* */
+.footer_nav_item {
+  list-style-type: none;
+}
+
+.footer_nav_items:focus,
+.footer_nav_items:hover {
+  text-decoration: underline;
+}
+
+.footer_nav_items:active {
+  color: #929caa;
+  text-decoration: none;  /*остается линия все равно*/
+}
+
+.footer_nav_items2:focus,
+.footer_nav_items2:hover {
+  text-decoration: underline;
+}
+
+.footer_nav_items2:active {
+  color: #998a6e;
+}
+
+.academy:focus,
+.academy:hover {
+  text-decoration: underline;
+}
+
+.academy:active {
+  color: #ee3643;
+  text-decoration: none; 
+}
+
 
 .popular {
   background-color: #f9f5f0;
@@ -206,8 +279,15 @@ text-transform: uppercase;
   text-transform: uppercase;
   background-color: #ee3643;
 }
-  
 
+.popular_link:focus, 
+.popular_link:hover {
+  background-color: #ca2c37;
+}
+
+.popular_link:active {
+  background-color: #ba2732;
+}
 
 .user-link {
   font-size: 16px;
@@ -222,6 +302,19 @@ text-transform: uppercase;
   color: #000000; 
 }
 
+.user-name:active {
+  color: #b2b2b2;
+}
+
+.user-link:focus,
+.user-link:hover {
+  color: #ee3643;
+} 
+
+.user-link:active {
+  color: #b7bfc8;
+}
+
 .catalog_nav,
 .catalog_nav_link {
   font-size: 13px;
@@ -230,6 +323,15 @@ text-transform: uppercase;
   text-transform: uppercase;
   font-family: 'PT Sans', sans-serif;
   font-weight: 700;
+} 
+
+.catalog-link:focus,
+.catalog-link:hover {
+  background-color: #ca2c37;
+}
+
+.catalog-link:active {
+  background-color: #ba2732;
 }
 
 .main_hammerdrill {
@@ -246,6 +348,21 @@ text-transform: uppercase;
   text-transform: uppercase;
   background-color: #f7f3ec; 
   font-family: 'PT Sans', sans-serif;
+}
+
+.dash {
+  color: #cacaca;
+  border-bottom: dashed 1px red;
+}
+
+.dash:focus,
+.dash:hover {
+  color: #000000;
+  text-decoration: underline; /*подчеркивание надо красное и не убирается пунктир */
+}
+
+.dash:active {
+  color: #ee3643;
 }
 
 .main_checkbox-name {
@@ -291,6 +408,10 @@ text-transform: uppercase;
   font-family: 'PT Sans', sans-serif;
 }
 
+.service_items {
+  list-style: none;
+}
+
 .service_items_h3 {
   font-size: 21px;
   line-height: 30px;
@@ -328,7 +449,7 @@ text-transform: uppercase;
 }
 
 .service {
-background-color: #f5f8fa;
+  background-color: #f5f8fa;
 }
 
 .service_text {
@@ -338,11 +459,43 @@ background-color: #f5f8fa;
   font-family: 'PT Sans', sans-serif;
 }
 
+.service_items_h3:focus,
+.service_items_h3:hover {
+  background-color: #293449;
+}
+
+.service_items_h3:active {
+  background-color: #ffffff;
+  color: #32425c;
+}
+
+.service_items_link:focus,
+.service_items_link:hover {
+  background-color: #ca2c37;
+}
+
+.service_items_link:active {
+  background-color: #ba2732
+}
+
 .number-page_link {
   font-size: 13px;
   line-height: 18px;
   color: #000000;
   font-family: 'PT Sans', sans-serif;
+}
+
+.number-page_link {
+  border: 1px solid #e5e5e5;
+}
+
+.number-page_link:focus,
+.number-page_link:hover {
+  border: 1px solid #bdc6ca;
+}
+
+.number-page_link:active {
+  border: 1px solid #ee3643;
 }
 
 .button-filter{
@@ -352,73 +505,9 @@ background-color: #f5f8fa;
   font-family: 'PT Sans', sans-serif;
 }
 
-/* focus hover */
-
 /*лого поиск*/
-
-.header_topline_link:focus,
-.header_topline_link:hover {
-    background-color: #212a3a;
-}
-
-.header_topline_link:active {
-  background-color: #161d29;
-  color: #999ca1;
-}
-
-.header_topline_order:focus,
-.header_topline_order:hover {
-  background-color: #5fbb2d;
-}
-
-.header_topline_order:active {
-   background-color: #518534;
-   color: #a2be93;
-}
-
-.header_user-nav_link:focus,
-.header_user-nav_link:hover {
-  color: #ee3643; 
-}
-
-.header_user-nav_link:active {
-  color: #b2b2b2;
-}
-
-.header_nav_items_link:focus,
-.header_nav_items_link:hover {
-  background-color: #293449;
-}
-
-.header_nav_items_link:active {
-  background-color: #1d2739;
-  color: #8e939c;
-}
-/* надо ли делать отдельный фон для ссылок */
-
-
-.blocks-link:focus,
-.block-link:hover {
-  background-color: #cccccc;
-}
-
-.block-link:active {
-  background-color: #b2b2b2; 
-}
-
-.catalog-link:focus,
-.catalog-link:hover {
-  background-color: #ca2c37;
-}
-
-.catalog-link:active {
-  background-color: #ba2732;
-}
-
-
-
-
-
+/* значки соц сети */
+/* radio, карточки формы */
 
 
 
