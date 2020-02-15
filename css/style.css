@@ -18,17 +18,36 @@ a {
   background-color: #293449;
   font-size: 17px;
   line-height: 18px;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  justify-content: space-between;
+}
+
+.header_topline a {
+  margin-right: 50px;
+}
+
+.header_topline_logo {
+  margin-left: 130px;
+}
+
+.search {
+  margin-right: 50px;  /* фон поиска надо под цвет */
 }
 
 /* для поиска */
 
 .header_topline_order {
   background-color: #63a63e;
+  background-size: 42px;
+  padding: 12px;
+  margin-right: 130px; /* почему не работает */
 }
 
 .header_topline_link:focus,
 .header_topline_link:hover {
-  background-color: #212a3a;
+  background-color: #212a3a; /* фон надо под разме строки*/
 }
 
 .header_topline_link:active {
@@ -46,12 +65,23 @@ a {
   color: #a2be93;
 }
 
+.undertopline {
+  display: flex;
+  align-items: center;
+  height: 155px;
+  justify-content: space-between;
+}
+
 .header_h1 {
   color: #ee3643;
   font-size: 16px;
   line-height: 23px;
   font-weight: 200; 
   font-style: italic;
+  width: 196px;
+  text-align: left; /* как перенести И без br */
+  margin-right: 60px;
+  margin-left: 182px;
 }
 
 .header_contacts_adress {
@@ -64,6 +94,8 @@ a {
   color: #ee3643;
   font-size: 21px;
   line-height: 21px;
+  padding: 10px;
+  border: 3px solid white;
 }
 
 .header_user-nav_link {
@@ -72,6 +104,12 @@ a {
   font-size: 21px;
   line-height: 21px;
   background-color: #ffffff;
+  background-size: 45px;
+  padding: 14px; 
+}
+
+.header_user-nav_link:last-child {
+  margin-right: 130px; 
 }
 
 .header_user-nav_link:focus,
@@ -88,10 +126,20 @@ a {
   font-size: 17px;
   line-height: 17px;
   text-transform: capitalize;
+  margin-left: 130px;
+  margin-right: 130px;
+  height: 55px;
 }
 
 .header_nav_items {
   list-style: none;
+  display: flex;
+  align-items: center; /* не могу сделать по центру */
+  justify-content: space-around;
+
+}
+
+.header_nav_link {
 }
 
 .header_nav_link:focus,
