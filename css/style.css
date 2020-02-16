@@ -25,7 +25,7 @@ a {
 }
 
 .header_topline a {
-  margin-right: 50px;
+  margin-right: auto;
 }
 
 .header_topline_logo {
@@ -33,7 +33,7 @@ a {
 }
 
 .search {
-  margin-right: 50px;  /* фон поиска надо под цвет */
+    /* фон поиска надо под цвет */
 }
 
 /* для поиска */
@@ -42,7 +42,7 @@ a {
   background-color: #63a63e;
   background-size: 42px;
   padding: 12px;
-  margin-right: 130px; /* почему не работает */
+  margin-right: 130px;
 }
 
 .header_topline_link:focus,
@@ -84,10 +84,17 @@ a {
   margin-left: 182px;
 }
 
+.header_contacts {
+  margin-top: 46px;
+}
+
 .header_contacts_adress {
   color: #32425c;
   font-size: 14px;
   line-height: 24px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
 }
 
 .header_contacts_tel {
@@ -95,7 +102,11 @@ a {
   font-size: 21px;
   line-height: 21px;
   padding: 10px;
+  padding-left: 49px;
+  padding-right: 49px;
   border: 3px solid white;
+  margin-bottom: 10px; /* почему не работет */
+
 }
 
 .header_user-nav_link {
@@ -137,6 +148,7 @@ a {
   display: flex;
   align-items: center; /* не могу сделать по центру */
   justify-content: space-around;
+  align-items: center;
   align-content: center;
   height: 100%;
   width: 100%;
@@ -145,6 +157,7 @@ a {
 
 .header_nav_link {
   display: flex;
+  align-items: center;
   align-content: center;
 }
 
@@ -236,24 +249,32 @@ a {
   background-color: #ffbf47;
   width: 300px;
   height: 123px;
+  display: flex;
+  flex-direction: column; 
 }
 
 .blue {
   background-color: #3bbce3;
   width: 300px;
   height: 123px;
+  display: flex;
+  flex-direction: column; 
 }
 
 .purple {
   background-color: #dc91d8; 
   width: 300px;
   height: 123px;
+  display: flex;
+  flex-direction: column; 
 }
 
 .green {
   background-color: #8ed78f;
   width: 300px;
   height: 123px;
+  display: flex;
+  flex-direction: column; 
 }
 
 .block-link {
@@ -261,6 +282,8 @@ a {
   line-height: 18px;
   background-color: #e5e5e5;
   text-transform: uppercase;
+  margin-left: 49px;
+  margin-bottom: 36px;
 }
 
 .block-link:focus,
