@@ -18,18 +18,16 @@ a {
   background-color: #293449;
   font-size: 17px;
   line-height: 18px;
-  display: flex;
-  align-items: center;
   height: 40px;
+}
+
+.header_topline_wrapper {
+  display: flex;
   justify-content: space-between;
-}
-
-.header_topline a {
-  margin-right: auto;
-}
-
-.header_topline_logo {
-  margin-left: 130px;
+  align-items: center;
+  max-width: 80%;
+  height: 100%;
+  margin: auto;
 }
 
 .search {
@@ -42,7 +40,6 @@ a {
   background-color: #63a63e;
   background-size: 42px;
   padding: 12px;
-  margin-right: 130px;
 }
 
 .header_topline_link:focus,
@@ -68,8 +65,12 @@ a {
 .undertopline {
   display: flex;
   align-items: center;
-  height: 155px;
+  align-content: space-around;
+  width: 80%;
   justify-content: space-between;
+  margin: auto;
+  margin-top: 45px;
+  margin-bottom: 45px;
 }
 
 .header_h1 {
@@ -80,21 +81,18 @@ a {
   font-style: italic;
   width: 196px;
   text-align: left; /* как перенести И без br */
-  margin-right: 60px;
-  margin-left: 182px;
+  margin-left: 50px;
 }
 
 .header_contacts {
-  margin-top: 46px;
+  display: flex;
+  flex-direction: column;
 }
 
 .header_contacts_adress {
   color: #32425c;
   font-size: 14px;
   line-height: 24px;
-  display: flex;
-  flex-direction: column;
-  margin: 10px;
 }
 
 .header_contacts_tel {
@@ -105,8 +103,7 @@ a {
   padding-left: 49px;
   padding-right: 49px;
   border: 3px solid white;
-  margin-bottom: 10px; /* почему не работет */
-
+  margin-bottom: 10px;
 }
 
 .header_user-nav_link {
@@ -117,10 +114,6 @@ a {
   background-color: #ffffff;
   background-size: 45px;
   padding: 14px; 
-}
-
-.header_user-nav_link:last-child {
-  margin-right: 130px; 
 }
 
 .header_user-nav_link:focus,
@@ -137,8 +130,8 @@ a {
   font-size: 17px;
   line-height: 17px;
   text-transform: capitalize;
-  margin-left: 130px;
-  margin-right: 130px;
+  margin: auto;
+  width: 80%;
   height: 55px;
   display: flex;
 }
@@ -146,19 +139,18 @@ a {
 .header_nav_items {
   list-style: none;
   display: flex;
-  align-items: center; /* не могу сделать по центру */
-  justify-content: space-around;
   align-items: center;
-  align-content: center;
+  justify-content: space-around;
   height: 100%;
   width: 100%;
-
+  margin: auto;
 }
 
 .header_nav_link {
   display: flex;
   align-items: center;
   align-content: center;
+  margin: auto;
 }
 
 .header_nav_link:focus,
@@ -204,6 +196,7 @@ a {
   font-size: 14px;
   line-height: 18px;
   background-color: #ee3643;
+  border: none;
 }
 
 .about-company_link:focus,
@@ -221,6 +214,26 @@ a {
   line-height: 24px;
 }
 
+.footer_nav_wrapper {
+ display: flex;
+ flex-direction: column;
+ width: 80%;
+ height: 100%;
+ margin: auto;
+}
+
+.goldtext_wrapper {
+  display: flex;
+  width: 50%;
+  margin-left: auto;
+  justify-content: space-between;
+}
+
+.footer_nav_location_wrapper {
+  display: flex;
+  flex-direction: column; 
+}
+
 .footer_down_cocial {
   list-style: none;
 }
@@ -229,6 +242,20 @@ a {
   background-color: #293449;
   font-size: 16px;
   line-height: 18px;
+}
+
+.footer_down_wrapper {
+  display: flex;
+  width: 80%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.feedback {
+  display: flex;
+  flex-direction: column;
 }
 
 .goldtext {
@@ -280,7 +307,7 @@ a {
 .block-link {
   font-size: 14px;
   line-height: 18px;
-  background-color: #e5e5e5;
+  background-color: rgba( 0,0,0 , 0.1);
   text-transform: uppercase;
   margin-left: 49px;
   margin-bottom: 36px;
@@ -288,11 +315,11 @@ a {
 
 .block-link:focus,
 .block-link:hover {
-  background-color: #cccccc;
+  background-color: rgba( 0,0,0 , 0.3)
 }
 
 .block-link:active {
-  background-color: #b2b2b2; 
+  background-color: rgba( 0,0,0 , 0.6)
 }
 
 /*слайдер*/
@@ -317,9 +344,29 @@ a {
   text-transform: uppercase;
 }
 
+.about-company_wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.about-company {
+  max-width: 520px; 
+}
+
+.about-company_contacts {
+  max-width: 300px;
+}
+
 .footer_nav_item {
   list-style-type: none;
+  display: flex;
+  width: 60%;
+  margin-left: auto;
+  justify-content: space-between;
 }
+
 
 .footer_nav_items:focus,
 .footer_nav_items:hover {
@@ -328,12 +375,13 @@ a {
 
 .footer_nav_items:active {
   color: #929caa;
-  text-decoration: none;  /*остается линия все равно*/
+  text-decoration: none;  
 }
 
 .footer_nav_items2:focus,
 .footer_nav_items2:hover {
   text-decoration: underline;
+  text-decoration: none; 
 }
 
 .footer_nav_items2:active {
@@ -428,6 +476,10 @@ a {
   line-height: 30px;
   color: #32425c; 
   text-transform: uppercase;
+}
+
+.filter-main {
+  background-color: #f7f3ec; 
 }
 
 .filter {
