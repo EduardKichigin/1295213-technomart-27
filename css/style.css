@@ -650,11 +650,49 @@ a {
 /* значки соц сети */
 /* radio, карточки формы */
 
+.forma-order {
+  width: 620px;
+  height: 275px;
+  background-color: #ffffff;
+  border-top: 7px solid #ee3643;
+}
 
+.forma-order_text {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: bold; 
+  color: #000000;
+  font-family: 'PT Sans', sans-serif;
+  text-align: center;
+}
 
+.forma-order_link1 {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #ee3643;
+  text-transform: uppercase;
+}
 
+.forma-order_link2 {
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  background-color: #ffffff;
+  text-transform: uppercase;
+}
 
+.forma-order_text_wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-top: auto;     /* форма меньше получается по ширине */
+  width: 100%;
+  height: 112px;
+  background-color: #f1f1f1;
+}
 
-
-
+.forma-order_text_wrapper div {
+  margin-top: auto;
+  margin-bottom: auto;
+}
 
