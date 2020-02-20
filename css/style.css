@@ -287,14 +287,37 @@ a {
   list-style-type: none;
 }
 
-.blocks_items {
+.block {
   display: flex;
   width: 960px;
+  height: 410px;
   margin: 0 auto;
   flex-wrap: wrap;
   justify-content: space-between; 
+  margin-bottom: 53px;
 }
 
+/*.blocks_items {
+  display: flex;
+  flex-wrap: wrap;
+  width: 960px;
+  margin: 0 auto;
+  justify-content: space-between;
+} */
+
+.blocks_items_wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 123px; 
+}
+
+.blocks_items_wrapper2 {
+  display: flex;
+  height: 266px;
+  justify-content: space-between; 
+  flex-wrap: wrap;
+}
 
 .blocks_items_goods {
   font-size: 24px;
@@ -544,7 +567,18 @@ a {
   height: 90px;
   margin: 0 auto;
   background-color: #f2f6f8; 
+  margin-bottom: 20px;
 }
+
+.filter_conteiner {
+  display: flex;
+  width: 700px;
+  flex-direction: column;
+  margin-left: 39px;
+}
+
+
+
 
 
 .catalog-link:focus,
@@ -599,7 +633,7 @@ a {
 
 .filter-main {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* нет отступов */ 
   list-style-type: none;
 }
 
@@ -779,6 +813,13 @@ a {
   background-color: #ba2732
 }
 
+.number-page {
+  display: flex;
+  width: 283px;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
 .number-page_link {
   font-size: 13px;
   line-height: 18px;
@@ -788,6 +829,7 @@ a {
 
 .number-page_link {
   border: 1px solid #e5e5e5;
+  padding: 12px;
 }
 
 .number-page_link:focus,
