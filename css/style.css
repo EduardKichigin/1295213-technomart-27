@@ -217,7 +217,7 @@ img {
 
 .enter-img {
   position: absolute;
-  right: 5px;
+  left: 15px;
 }
 
 /*.enter::before {
