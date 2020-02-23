@@ -16,17 +16,18 @@
             <img src="img/logo.png" width="220" height="47" alt="Логотип «Техномарт»">
             </a>
           </div>
-          <div>
+          <div class="search_wrapper">
+            <img src="img/icon-search.svg" width="17px" height="17px" class="search-img">
             <form action="#" metod="post">
               <label for="search">Поиск:</label>
               <input type="search" name="search" id="search" class="search">
             </form>
           </div>
-          <div>
-            <a href="#" class="header_topline_link">Закладки</a>
+            <div class="bookmark_wrapper">
+            <a href="#" class="header_topline_link bookmark">Закладки</a>
           </div>
           <div>
-            <a href="#" class="header_topline_link">Корзина</a>
+            <a href="#" class="header_topline_link basket">Корзина</a>
           </div>
           <div>
             <a href="#" class="header_topline_order">Оформить заказ</a>
@@ -43,7 +44,8 @@
           <span class="header_contacts_adress">г.Санкт-Петербург, ул. Конюшенная, д.19/8</span>
         </div>
         <div class="header_user-nav">
-          <a class="header_user-nav_link" href="#">Войти</a>
+          <img src="img/logout.svg" width="20px" height="17px" class="enter-img">
+          <a class="header_user-nav_link enter" href="#">Войти</a>
           <a class="header_user-nav_link" href="#">Регистрация</a>
         </div>
       </div>
@@ -64,14 +66,17 @@
         <h2 class="visually-hidden block_h2">Товары</h2>
         <ul class="blocks_items blocks_items_wrapper">
           <li class="yellow">
+            <img src="img/icon-1.svg" width="44px" height="65px" class="icon-1">
             <h3 class="blocks_items_goods">Материалы</h3>
             <a href="#" class="block-link">на любой вкус</a>
           </li>
           <li class="blue">
+            <img src="img/icon-2.svg" width="75px" height="61px" class="icon-2">
             <h3 class="blocks_items_goods">Инструмент</h3>
             <a href="#" class="block-link">на все случаи</a>
           </li>
           <li class="purple">
+            <img src="img/icon-3.svg" width="78px" height="62px" class="icon-3">
             <h3 class="blocks_items_goods">Техника</h3>
             <a href="#" class="block-link">для стройки</a>
           </li>
@@ -82,10 +87,12 @@
             </div>
             <div class="right_column">
           <div class="green">
+            <img src="img/icon-4.svg" width="59px" height="72px" class="icon-4">
             <h3 class="blocks_items_goods">Скидка 50%</h3>
             <a href="#" class="block-link">на 350 товаров</a>
           </div>
           <div class="yellow">
+            <img src="img/icon-5.svg" width="78px" height="63px" class="icon-5">
             <h3 class="blocks_items_goods">Доставка</h3>
             <a href="#" class="block-link">бесплатно</a>
           </div>
@@ -314,24 +321,43 @@
         </div>
       </div>
     </footer>
-    <form action="" method="post">
+
+
+
+   <div class="forma-writeus">
+
+    <!--<form action="" method="post">-->
+      
       <div>
         <button type="button">закрыть</button>
+      </div> 
+
+      <div class="forma-writeus_row">
+      <div>
+        <label for="name" class="forma-writeus_text">Ваше имя:</label>
+        <input type="text" name="name" id="name" placeholder="Имя Фамилия"class="name_size">
       </div>
       <div>
-        <label for="name">Ваше имя:</label>
-        <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+        <label for="email" class="forma-writeus_text">Ваш e-mail:</label>
+        <input type="email" name="email" id="email" placeholder="email@example.com" class="name_size"> 
       </div>
       <div>
-        <label for="email">Ваш e-mail:</label>
-        <input type="email" name="email" id="email" placeholder="email@example.com"> 
+        <label for="letter" class="forma-writeus_text">Текс письма:</label>
+        <textarea name="letter" id="letter" rows="5" class="letter_size">В свободной форме</textarea>
       </div>
-      <p>
-        <label for="letter">Текс письма:</label>
-        <textarea name="letter" id="letter" rows="5">В свободной форме</textarea>
-      </p>
-      <button type="submit">отправить</button>
-    </form>
+      </div>
+
+
+      <div class="forma-writeus_button_wrapper">
+      <button type="submit" class="forma-writeus_button">отправить</button>
+    </div>
+    <!--</form> -->
+
+   </div>
+
+
+
+
   </body>
   
 </html>
