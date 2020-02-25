@@ -320,13 +320,23 @@ img {
   font-size: 18px;
   line-height: 20px;
   color: #000000; 
+  margin-bottom: 40px;
 }
 
 .about-company_link {
+  color: #ffffff;
   font-size: 14px;
   line-height: 18px;
   background-color: #ee3643;
   border: none;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 30px; 
+  padding-left: 30px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin-top: 40px;         /* отступы доделать */
 }
 
 .about-company_link:focus,
@@ -433,6 +443,7 @@ img {
   margin-left: 23px;
   margin-top: 26px;
   display: inline-block;
+  margin-bottom: 15px;
 }
 
 .yellow {
@@ -506,8 +517,13 @@ img {
   line-height: 18px;
   background-color: rgba( 0,0,0 , 0.1);
   text-transform: uppercase;
-  margin-left: 49px;
-  margin-bottom: 36px;
+  text-align: center;
+  margin-left: 25px;
+  margin-right: 140px;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
 }
 
 .block-link:focus,
@@ -539,9 +555,40 @@ img {
   justify-content: space-between;
   width: 960px;
   margin: 0 auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
+
+.product_items_goods {
+  position: relative;
+  display: inline-block;
+  width: 218px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  line-height: 20px;
+  font-weight: bold;
+  text-align: center;
+  
+  border: 1px solid #ccc;
+}
+
+.flag {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  
+  width: 60px;
+  height: 60px;
+  
+  text-indent: -1000px;
+  overflow: hidden;
+  z-index: 20;
+}
+
+.flag-new {
+  background: url("../img/new-flag.svg") no-repeat 0 0;
+}
+
 
 .catalog-link {
   font-size: 14px;
@@ -626,6 +673,7 @@ img {
 .popular {
   background-color: #f9f5f0;
   display: flex;
+  align-items: center;
   width: 960px;
   margin: 0 auto;
   justify-content: space-around;
@@ -643,6 +691,10 @@ img {
   line-height: 18px;
   text-transform: uppercase;
   background-color: #ee3643;
+  padding: 12px;
+  padding-right: 50px; 
+  padding-left: 50px;
+  border-radius: 5px;
 }
 
 .popular_link:focus, 
@@ -783,16 +835,12 @@ img {
   width: 700px;
   margin: auto;
   flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 .drill-items {
   padding: 0;
 }
-
-
-
-
-
 
 .filter {
   font-size: 13px;
@@ -841,7 +889,13 @@ img {
   color: #000000; 
   font-weight: 700;
   font-family: 'PT Sans', sans-serif;
+  text-align: center;
 }
+
+.buy,
+.inbookmark {
+  color: ;
+} 
 
 .drill-items_oldprice {
   font-size: 17px;
@@ -850,15 +904,78 @@ img {
   text-decoration: line-through;
   font-weight: 700;
   font-family: 'PT Sans', sans-serif;
+  text-align: center;
 }
 
 .drill-items_price {
-  font-size: 17px;
+  position: relative;
+  width: 80px;
+  margin: 10px auto;
+  margin-bottom: 20px;
+  padding: 11px 30px;
+  color: white;
+  background: #ee3643;
+  border-radius: 3px;
+}
+
+.drill-items_price:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -20px;
+  width: 0;
+  height: 0;
+  border: 20px solid white;
+  border-left-color: #ee3643;
+}
+
+.actions {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 218px;
+  height: 88px;
+  padding: 40px 0;
+  background-color: rgba(255,255,255,0.9);
+  z-index: 10;
+}
+
+.buy,
+.inbookmark {
+  display: block;
+  width: 129px;
+  margin: 0 auto;
+  margin-bottom: 7px;
+  padding: 7px 0;
+  background-color: #63a63e;
+  border: 3px solid #63a63e;
+  border-bottom-color: #367315;
+  border-radius:3px;
+  color: white;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Cuprum", sans-serif;
   line-height: 18px;
-  color: #ffffff; 
-  background-color: #ee3643;
-  font-weight: 700;
-  font-family: 'PT Sans', sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.inbookmark {
+  color: #32425c;
+  background: white;
+  border-bottom-color: #63a63e;
+}
+
+.product_items_goods .actions {
+  display: none;
+}
+
+.product_items_goods:hover .actions {
+  display: block;
+}
+
+.product_items_goods:nth-child(3n) {
+  margin-right: 0;
 }
 
 .service_first {
@@ -908,6 +1025,11 @@ img {
   line-height: 18px;
   color: #ffffff; 
   background-color: #ff5357;
+  padding: 12px;
+  padding-right: 50px; 
+  padding-left: 50px;
+  border-radius: 5px;
+
 }
 
 .service_items_title {
@@ -998,6 +1120,26 @@ img {
   height: 275px;
   background-color: #ffffff;
   border-top: 7px solid #ee3643;
+  display: flex;
+  flex-direction: column;
+}
+
+.forma-order_edd {
+  height: 170px;
+  position: relative;
+  align-items: center;
+}
+
+.forma-order_text:before {
+  content: "";
+  width: 66px;
+  height: 66px;
+  position: absolute;
+  background-image: url("../img/icon-mark.svg");
+  left: 45px;
+  top: 30px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .forma-order_text {
@@ -1015,7 +1157,22 @@ img {
   color: #ffffff;
   background-color: #ee3643;
   text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 60px;
+  padding-right: 60px;
+  border-radius: 5px;
 }
+
+.forma-order_link1:focus,
+.forma-order_link1:hover {
+  background-color: #ca2c37;
+} 
+
+.forma-order_link1:active {
+  background-color: #ba2732;
+}
+
 
 .forma-order_link2 {
   font-size: 14px;
@@ -1023,12 +1180,16 @@ img {
   color: #000000;
   background-color: #ffffff;
   text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 60px;
+  padding-right: 60px;
+  border-radius: 5px;
 }
 
 .forma-order_text_wrapper {
   display: flex;
   justify-content: space-around;
-  margin-top: auto;     /* форма меньше получается по ширине */
   width: 100%;
   height: 112px;
   background-color: #f1f1f1;
@@ -1064,6 +1225,7 @@ img {
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 0 auto;
+  margin-top: 20px;
 }
   
 .forma-writeus_button_wrapper {
@@ -1123,8 +1285,9 @@ img {
   border: 2px solid #ee3643;
 }
 
-
-
+.visually-hidden {
+visibility: hidden;
+}
 
 
 
