@@ -39,9 +39,12 @@ img {
 .search {
   background-color: #293449;
   color: #ffffff;
+  border: none;
+  font-size: 17px;
+  line-height: 18px;
 }
 
-/* для поиска */
+
 
 .header_topline_logo {
   display: inline-block;
@@ -68,10 +71,6 @@ img {
 
 .form-search {
   fill: #6a7180;
-}
-
-.search {
-	
 }
 
 .form-search:focus,
