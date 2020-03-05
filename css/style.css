@@ -36,9 +36,10 @@ img {
   margin: 0 auto;
 }
 
-
-
-
+.search {
+  background-color: #293449;
+  color: #ffffff;
+}
 
 /* для поиска */
 
@@ -67,6 +68,10 @@ img {
 
 .form-search {
   fill: #6a7180;
+}
+
+.search {
+	
 }
 
 .form-search:focus,
@@ -451,6 +456,18 @@ img {
   width: 100%;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 .right_column {
   display: flex;
   justify-content: space-between;
@@ -489,6 +506,7 @@ img {
   display: flex;
   flex-direction: column; 
   position: relative;
+  margin-right: 17px;
 }
 
 .icon-2 {
@@ -519,6 +537,7 @@ img {
   display: flex;
   flex-direction: column; 
   position: relative;
+  margin-bottom: 20px;
 }
 
 .icon-4 {
@@ -1376,12 +1395,9 @@ img {
   padding-bottom: 100px;
 }
 
-.slaider_wrapper {
-  position: relative;
-}
-
 .service_items_slaider {
   list-style-type: none;
+  position: relative;
 }
 
 
@@ -1406,13 +1422,65 @@ img {
   border: 1px solid #293449;
 }
 
-.slide-2,
-.slide-3 {
+.slide1 {
+  position: absolute;
+  display: inline-block;
+  min-width: 300px;
+}
+
+.slide2 {
+  position: absolute;
+  display: inline-block;
+  width: 380px;
+}
+
+.slide3 {
+  position: absolute;
+  display: inline-block;
+  margin-bottom: 50px;
+  min-width: 300px;
+}
+
+.slide1,
+.slide2,
+.slide3 {
   display: none;
 }
 
-#service-2:checked .slide-2 {
-  display: block;
+#service-1:checked ~ .service_items_slaider #slide-1,
+#service-1:checked ~ .service_items_slaider #slide-2,
+#service-1:checked ~ .service_items_slaider #slide-3 {
+  display: block; 
+}
+
+.slide1:after {
+  content: "";
+  position: absolute;
+  background-image: url(../img/truck.svg);
+  width: 468px;
+  height: 261px;
+  top: 30px;
+  left: 80px;
+}
+
+.slide2:after {
+  content: "";
+  position: absolute;
+  background-image: url(../img/garant.svg);
+  width: 468px;
+  height: 261px;
+  top: 30px;
+  left: 170px;
+}
+
+.slide3:after {
+  content: "";
+  position: absolute;
+  background-image: url(../img/credit.svg);
+  width: 468px;
+  height: 261px;
+  top: 30px;
+  left: 140px;
 }
 
 
@@ -1434,7 +1502,8 @@ img {
   padding-right: 50px; 
   padding-left: 50px;
   border-radius: 5px;
-
+  display: inline-block;
+  margin-top: 20px;
 }
 
 .service_items_title {
@@ -1742,9 +1811,152 @@ img {
 visibility: hidden;
 }
 
+/* СЛАЙДЕР */ 
 
+.slider p,
+.slider figcaption,
+.slider h2,
+.slider figure {
+  margin: 0;
+  padding: 0;
+}
 
+.slider {
+  position: relative;
+  width: 620px;
+  height: 266px;
+  margin-top: -18px;
+}
 
+.slider-item {
+  position: absolute;
+  display: none;
+  margin-bottom: 10px;
+}
+
+.slider-title {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.slider-image {
+  position: relative;
+  width: 620px;
+  height: 266px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.slider-image figcaption {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+}
+
+.slider p {
+  color: #ffffff;
+  line-height: 24px;
+  font-size: 18px;
+}
+
+.slider .btn {
+  position: absolute;
+  box-sizing: border-box;
+  bottom: 22px;
+  left: 26px;
+  min-width: 195px;
+
+  padding: 10px 5px;
+}
+
+.slider-control label {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-right: 6px;
+
+  vertical-align: top;
+
+  background-color: #ffffff;
+  border: solid 2px #ffffff;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.slider-control {
+  position: absolute;
+  top: 220px;
+  left: 295px;
+}
+
+#drill:checked ~ #slide-1,
+#hammer-drill:checked ~ #slide-2 {
+  display: block;
+}
+
+#drill:checked ~ .slider-control label[for="drill"],
+#hammer-drill:checked ~ .slider-control label[for="hammer-drill"] {
+  background-color: #ee3643;
+}
+
+.slider-arrows label {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+
+  vertical-align: middle;
+
+  border-top: solid 3px #ffffff;
+  border-left: solid 3px #ffffff;
+
+  cursor: pointer;
+}
+
+.slider-arrows label:first-child {
+  position: absolute;
+  top: 118px;
+  left: 30px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.slider-arrows label:last-child {
+  position: absolute;
+  top: 118px;
+  right: 28px;
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 55px;
+
+  color: #ffffff;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+
+  border: none;
+  background-color: #ee3643;
+  border-radius: 2px;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #ca2c37;
+}
+
+.btn:active {
+  background-color: #ba2732;
+}
 
 
 

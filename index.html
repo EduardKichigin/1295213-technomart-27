@@ -84,9 +84,38 @@
           </li>
           </ul>
         <div class="blocks_items blocks_items_wrapper2">
-          <div>
-              <img src="img/foto1.jpg" width="620" height="266" alt="">
+         <div class="slider">
+            <input class="visually-hidden" type="radio" id="drill" name="toggle" checked>
+            <input class="visually-hidden" type="radio" id="hammer-drill" name="toggle">
+            <div class="first-slider slider-item" id="slide-1">
+              <figure class="slider-image">
+                <figcaption>
+                  <h2 class="slider-title">Дрели</h2>
+                  <p>Соседям на радость!</p>
+                </figcaption>
+                <img src="img/foto1.jpg" width="620" height="266" alt="Дрели BOSCH">
+              </figure>
+              <a class="btn" href="inner.html">Открыть каталог</a>
             </div>
+            <div class="second-slider slider-item" id="slide-2">
+              <figure class="slider-image">
+                <figcaption>
+                  <h2 class="slider-title">Перфораторы</h2>
+                  <p>Настоящие мужские игрушки</p>
+                </figcaption>
+                <img src="img/foto2.jpg" width="620" height="266" alt="Перфораторы BOSCH">
+              </figure>
+              <a class="btn" href="inner.html">Открыть каталог</a>
+            </div>
+            <div class="slider-control">
+              <label for="drill"></label>
+              <label for="hammer-drill"></label>
+            </div>
+            <div class="slider-arrows">
+              <label for="drill"></label>
+              <label for="hammer-drill"></label>
+            </div>
+          </div>
             <div class="right_column">
           <div class="green">
             <img src="img/icon-4.svg" width="59px" height="72px" class="icon-4">
@@ -101,33 +130,6 @@
         </div>
           </div>
       </section>
-
-
-
- <!--<div class="slider">
-          <h3 class="slider_h3">дрели</h3>
-          <p class="slider_text">Соседям на радость!</p>
-          <span> кнопочки
-          </span>
-          <ul class="slider_foto">
-            <li>
-              <img src="img/foto1.jpg" width="620" height="266" alt="">
-            </li>
-          </ul> -->
-            <!-- <li>
-              <img src="img/foto2.jpg" width="620" height="266" alt="">
-            </li> 
-          </ul>
-          <ul class="slider_buttom">
-            <li>
-              <a href="inner.html" class="catalog-link">открыть каталог</a>
-            </li>
-            <li>
-              <a href="#"><img src="#" width="#" height="#" alt="стрелка вправо"></a>
-            </li>
-            <li>
-              <a href="#"><img src="#" width="#" height="#" alt="стрелка влево"></a>
-            </li> -->
       <section>
         <div class="popular">
           <h2 class="popular_h2">Популярные товары:</h2>
@@ -240,7 +242,6 @@
               </li>
             </ul>
           </div>
-          <div class="slaider_wrapper">
             <ul class="service_items_slaider">
               <li class="slide slide1" id="slide-1">
                 <span class="service_items_title">Доставка</span>
@@ -248,23 +249,22 @@
                   Ведь мы неплохо заработаем, </br> поднимая его на ваш этаж!
                 </p>
               </li>
-              <li class="slide slide-2" id="slide-2">
+              <li class="slide slide2" id="slide-2">
                 <span class="service_items_title">Гарантия</span>
-                <p class="service_items_text">Если купленный у нас товар поломается или заискрит, 
-                  а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. 
+                <p class="service_items_text">Если купленный у нас товар поломается или заискрит, </br> 
+                  а также в случае пожара, спровоцированного его возгоранием, </br>  вы всегда можете быть уверены в нашей гарантии. Мы обменяем </br> сгоревший товар на новый. </br>
                   Дом уж восстановите как-нибудь сами.
                 </p>
               </li>
-              <li class="slide slide-3" id="slide-3">
+              <li class="slide slide3" id="slide-3">
                 <span class="service_items_title">Кредит</span>
                 <p class="service_items_text">
-                  Залезть в долговую яму стало проще! 
+                  Залезть в долговую яму стало проще! </br>
                   Кредитные консультанты придут вам на помощь.
                 </p>
                 <a href="#" class="service_items_link">отправить заявку</a>
               </li>
             </ul>
-          </div>
         </div>
       </section>
       <section class="about-company_wrapper">
