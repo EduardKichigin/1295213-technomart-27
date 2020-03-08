@@ -1409,19 +1409,19 @@ background-color: #ee3643;
 background-image: url(../img/icon-vk.svg);
 background-repeat: no-repeat;
 background-size: 28px 14px;
-background-position: 8px 13px;
+background-position: 6px 13px;
 }
 .social-button-fb {
 background-image: url(../img/icon-fb.svg);
 background-repeat: no-repeat;
 background-size: 13px 23px;
-background-position: 16px 9px;
+background-position: 14px 9px;
 }
 .social-button-insta {
 background-image: url(../img/icon-insta.svg);
 background-repeat: no-repeat;
 background-size: 21px 22px;
-background-position: 11px 8px;
+background-position: 10px 9px;
 }
 .feedback-block {
 display: -webkit-box;
